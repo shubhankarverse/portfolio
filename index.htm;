@@ -494,3 +494,4 @@ const awardLightbox=document.getElementById('awardLightbox'),awardTrigger=docume
 const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav-links a')];const navIO=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>navIO.observe(s));document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body></html>
+```
